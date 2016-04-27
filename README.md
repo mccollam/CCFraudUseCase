@@ -96,6 +96,12 @@ Verify that the placement of the python script is on you server location in the 
  /home/nifi/CCFraudUseCase/Data_Generation/
  
  Place also the bash script (ledger1.sh) and the jar file (parseJsonObjects.jar) to calulate distance in that directory.
+ To enable Nifi ExecueStreamCommand to calculate the distance on two transactions of the same CC make the change in the 
+ "Retrieve_Store_ledger" process:
+ 
+ Command Arguments: <PATH_to_your_scripts_dir>/ledger1.sh;
+ Command Path: bash
+ 
  
  To verify you can click the handle_requests process and click the "Ledger transaction" process, 
  right click the "Retrieve_store_Ledger" and inspect the command Arguments property.
