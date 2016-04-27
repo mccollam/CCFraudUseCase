@@ -103,7 +103,7 @@ Verify that the placement of the python script is on you server location in the 
  Now you are ready to launch your UI at the Webserver location you set up on step 2, the 
  following display will show up!
  
- ![Image](../master/Screenshot/ScreenUI-Nifi-HDP.png?raw=true)
+ ![Image](../master/Screenshot/ScreenUI-Nifi-HDP2.png?raw=true)
  
  
 
