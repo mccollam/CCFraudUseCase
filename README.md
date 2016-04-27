@@ -45,7 +45,7 @@ output looks like the following of the above python script
   }
 }
 
-# Installation steps
+# installation steps
 
 1. Install an HDP cluster 
 1.1. You can Ambari to install your cluster or download a sanbox for the Hortonworks web site at:
@@ -75,7 +75,8 @@ sudo service httpd start
 
 3. Install Nifi:
 
-To install Nifi on your cluster please follow the steps documented in the following github:
+To install Nifi on your cluster please follow the steps documented in the Ali's github:
+
 https://github.com/abajwa-hw/ambari-nifi-service
 
 
@@ -89,11 +90,20 @@ Once the template is loaded you can drag the icon in the red rectangle to the UI
 which will enable a popup menu that would display "Nifi_demo_se.xml".
 After selecting this template you view should display the following Nifi flow.
 
+![Image](../master/Screenshot/Nifi-ui1.jpg?raw=true)
 
-
+Verify that the placement of the python script is on you server location in the template we have it at:
+ /home/nifi/CCFraudUseCase/Data_Generation/
+ 
+ To verify you can click the handle_requests process and click the "Ledger transaction" process, 
+ right click the "Retrieve_store_Ledger" and inspect the command Arguments property.
+ 
+ If all is good, you can start the flow by licking on the Green "Play" triangle.
+ 
+ Now you are ready to launch your UI at the Webserver location you set up on step 2, the 
+ following display will show up!
+ 
+ ![Image](../master/Screenshot/ScreenUI-Nifi-HDP.png?raw=true)
  
  
-
-
-
 
